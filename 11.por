@@ -6,7 +6,7 @@ programa
 		caracter arr1[4]
 		caracter arr2[4]
 		inteiro i 
-		logico v = falso
+		inteiro v = 0
 		
 	
 
@@ -22,11 +22,14 @@ programa
 		}
 
 		para(i=0; i<4; i++){
-			se(arr1[i]==arr2[i]){
-				v = verdadeiro
+			para(inteiro j=0; j<4; j++){
+				se(arr1[i]==arr2[j]){
+					v+=1
+				}
 			}
 		}
-		se(v == falso){
+			
+		se(v < 4){
 			escreva( " nao e um anagrama de ")
 		}senao{
 			escreva( " e anagrama de ")
@@ -38,9 +41,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 226; 
+ * @POSICAO-CURSOR = 364; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {v, 9, 10, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
